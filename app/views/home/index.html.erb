@@ -1,8 +1,16 @@
-<h1>Welcome to Google Search App!</h1>
-<p>キーワードを入力し、検索ボタンを押下してください。検索結果が表示されます。</p>
-<div>
-<%= form_with url: root_path, method: :get, local: true do |f| %>
-	<%= f.text_field :string %>
-	<%= f.submit "検索する" %>
-<% end %>
+
+<div class="center jumbotron">
+	<h1 class="display-4">Welcome to Google Search App!</h1>
+	<p>キーワードを入力し、検索ボタンを押下してください。検索結果が表示されます。</p>
+	<div class="pt-3">
+		<%= form_with url: root_path, method: :get, local: true do |f| %>
+			<div class="input-group">
+				<%= f.text_field :string, class: "form-control" %>
+				<span class="input-group-btn">
+					<%= f.submit "検索", class: "btn btn-primary" %>
+				</span>
+			</div>
+		<% end %>
+	</div>
 </div>
+
