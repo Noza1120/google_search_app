@@ -1,0 +1,14 @@
+<%= render 'layouts/form' %>
+<h2>検索結果</h2>
+<ul class="results">
+  <% @items.each do |item| %>
+    <li>
+      <p class="lead">
+        <%= item[:title] %>
+      </p>
+      <p class="text-muted">
+        <%= item[:link] %>
+      </p>
+    </li>
+  <% end %>
+</ul>
