@@ -1,24 +1,30 @@
-# README
+# 概要
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+キーワードを入力し、Google検索結果を一覧表示させるアプリ
 
-Things you may want to cover:
+公開URL: https://google-search-app-v1.herokuapp.com/
 
-* Ruby version
+## 機能要件
 
-* System dependencies
+* ユーザが文字列入力フォームにキーワードを入力し、入力したキーワードでのGoogle検索結果を一覧表示すること
 
-* Configuration
+## 非機能要件
 
-* Database creation
+* Google 検索結果の取得には、「Custom Search JSON API」を使用すること
 
-* Database initialization
+## 使用技術
 
-* How to run the test suite
+Ruby on Rails
 
-* Services (job queues, cache servers, search engines, etc.)
+## データベース
 
-* Deployment instructions
+PostgeSQL(テーブル作成は未実施)
 
-* ...
+## 本番環境
+
+Heroku
+
+## 開発環境
+
+MacOS
+Docker
