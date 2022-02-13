@@ -4,10 +4,8 @@ class HomeController < ApplicationController
 
   def search
     @query = params[:query]
-    # 検索取得結果は一旦スタブとする
-    @items = [
-                  {  :title => "テスト1", :link => "https://test1.com" },
-                  {  :title => "テスト2", :link => "https://test2.com"}
-                ] 
+    # Custom Search JSON APIの呼び出し
+    request = WebApi::GoogleSearch::ApiRequest.build(@query)
+    @items = WebApi::GoogleSearch::ApiClient.send(request)
   end
 end
