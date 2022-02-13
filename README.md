@@ -26,5 +26,4 @@ Heroku
 
 ## 開発環境
 
-MacOS
-Docker
+MacOS、Docker
