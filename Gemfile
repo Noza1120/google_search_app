@@ -26,7 +26,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 # Google API クライアントライブラリ
-gem 'google-api-client', '~> 0.28.7'
+# Doc: https://github.com/googleapis/google-api-ruby-client
+gem 'google-api-client', '~> 0.53.0'
 
 # Bootstrap
 gem 'bootstrap-sass', '~> 3.4', '>= 3.4.1'
