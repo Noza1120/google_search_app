@@ -1,6 +1,6 @@
 module WebApi::GoogleSearch
   class ApiRequest
-    def self.build(query, start = 1)
+    def self.build(query, start = nil)
       {               
         q:     query,
         start: start
